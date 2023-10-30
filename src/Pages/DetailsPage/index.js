@@ -23,14 +23,14 @@ function Details() {
 
   const handleSave = async (editedWarehouse) => {
     dispatch({
-      type: "UPDATE_WAREHOUSE", // Change this to your actual action type
+      type: "UPDATE_WAREHOUSE", 
       payload: {
-        id: idNumber, // ID of the warehouse you want to update
-        updatedData: editedWarehouse, // The edited data for the warehouse
+        id: idNumber, 
+        updatedData: editedWarehouse, 
       },
     });
   
-    setIsEditing(false); // Exit edit mode after saving
+    setIsEditing(false); 
   };
 
   
