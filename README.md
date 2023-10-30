@@ -1,5 +1,6 @@
 
  #Warehouse Application
+ 
 In this application i am getting data from  redux store .
 
 In home page data is loaded from redux store. In this user can also filter data based on city,cluster_name and space_available.In this page user can also get data for particular warehouse name by typing in serach box.
