@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import {  useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 
@@ -23,18 +23,7 @@ console.log(storeWarehouses)
     return nameMatch && cityMatch && clusterMatch && spaceAvailableMatch;
   });
 
-  // useEffect(() => {
-  //   if (storeWarehouses.length === 0) {
-  //     fetch('http://localhost:3001/houses')
-      
-  //       .then((response) => response.json())
-  //       .then((data) => { console.log(data)
-  //         dispatch({ type: "GETHOUSES", payload: { data } });
-  //       });
-  //   }
-  //   // eslint-disable-next-line
-  // }, [dispatch]);
-
+ 
   return (
     <div className="main-container">
       <div className="search-container">
