@@ -1,5 +1,5 @@
 
- #Warehouse Application
+ # Warehouse Application
  
 In this application i am getting data from  redux store .
 
