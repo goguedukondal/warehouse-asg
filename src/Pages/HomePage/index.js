@@ -41,23 +41,19 @@ console.log(storeWarehouses)
           onChange={(e) => setFilters({ ...filters, city: e.target.value })}
         >
           <option value="">All Cities</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Chennai">Chennai</option>
-          <option value="Indore">Indore</option>
-          <option value="Mumbai">Mumbai</option>
-          <option value="Bangalore">Bangalore</option>
-          <option value="Guwahati">Guwahati</option>
+          { filteredWarehouses.map((warehouse,i)=>{
+           return <option value={warehouse.city}>{warehouse.city}</option>
+          })}
+          
         </select>
         <select className='cluster-selection'
           value={filters.cluster}
           onChange={(e) => setFilters({ ...filters, cluster: e.target.value })}
         >
           <option value="">All Clusters</option>
-          <option value="cluster-a-32">cluster-a-32</option>
-          <option value="cluster-a-1">cluster-a-1</option>
-          <option value="cluster-a-21">cluster-a-21</option>
-          <option value="cluster-a-2">cluster-a-2</option>
-          <option value="cluster-v-2">cluster-v-2</option>
+          { filteredWarehouses.map((warehouse,i)=>{
+           return <option value={warehouse.cluster}>{warehouse.cluster}</option>
+          })}
         </select>
         <input className='space'
           type="number"
