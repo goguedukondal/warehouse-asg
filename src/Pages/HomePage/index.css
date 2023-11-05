@@ -1,10 +1,10 @@
-/* WarehouseCard.css */
+
 .warehouse-card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 16px;
     margin: 10px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  
     background-color: #fff;
     cursor: pointer;
     box-shadow: 0 0 10px black;
@@ -36,27 +36,35 @@
     align-items: center;
     margin: 1.2em;
     height: 2.5em;
+ 
   }
   .input-search{
     width: 80%;
     height: 70%;
     padding-left: 5px;
     
+    
   }
   .input-search:hover{
     cursor: text;
+   
   }
   .selection-container{
-    /* border: 1px solid green; */
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 1.2em;
     height: 2.5em;
+    background-color: teal;
+    border-radius: 8px;
   }
   .city-selection{
     padding: 5px 10px;
     cursor: pointer;
+  
+    border-radius: 4px;
+    color: teal;
   }
   .city-selection:hover{
     background-color: #f0f0f0;
@@ -64,12 +72,17 @@
   .cluster-selection{
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 4px;
+    color: teal;
   }
   .cluster-selection:hover{
     background-color: #f0f0f0;
   }
   .space{
     padding: 5px 10px; 
+    border-radius: 4px;
+    border: none;
+    color: teal;
   }
   .warehouse-title{
    color: teal;
