@@ -19,3 +19,6 @@ button{
 button:hover{
   background-color: darkslategrey;
 }
+li{
+  list-style: none;
+}
